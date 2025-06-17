@@ -11,7 +11,7 @@ int main (void)
 
     xil_printf("-- Inicio del programa --\r\n");
 
-    // Inicializar periféricos GPIO
+    // Inicializar perifï¿½ricos GPIO
     XGpio_Initialize(&dip, XPAR_SWITCHES_DEVICE_ID);
     XGpio_SetDataDirection(&dip, 1, 0xFFFFFFFF);  // switches como entrada
 
@@ -27,7 +27,7 @@ int main (void)
 
         unsigned int paso_w = (dip_check << 4) + psb_check;
 
-        // Escribe el valor leído al registro 0 del IP FIR (PASO_W)
+        // Escribe el valor leï¿½do al registro 0 del IP FIR (PASO_W)
         FIR_IP_mWriteReg(XPAR_FIR_IP_0_S00_AXI_BASEADDR, FIR_IP_S00_AXI_SLV_REG0_OFFSET, paso_w);
 
         sleep(1);
