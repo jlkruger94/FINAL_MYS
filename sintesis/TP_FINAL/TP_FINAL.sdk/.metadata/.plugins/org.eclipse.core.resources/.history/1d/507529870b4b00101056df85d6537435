@@ -1,0 +1,42 @@
+#include "xparameters.h"
+#include "xgpio.h"
+#include "fir_ip.h"
+#include "xil_printf.h"
+#include "sleep.h"
+
+// Dirección base del FIR IP core (definida por el Address Editor en Vivado)
+#define FIR_BASE_ADDR XPAR_FIR_IP_0_S00_AXI_BASEADDR  // esto apunta a 0x43C00000
+
+int main (void) 
+{
+    XGpio dip, push;
+    int psb_check, dip_check;
+
+    xil_printf("-- Inicio del programa --\r\n");
+
+    // Inicializar periféricos GPIO
+    XGpio_Initialize(&dip, XPAR_SWITCHES_DEVICE_ID);
+    XGpio_SetDataDirection(&dip, 1, 0xFFFFFFFF);  // switches como entrada
+
+    XGpio_Initialize(&push, XPAR_BUTTONS_DEVICE_ID);
+    XGpio_SetDataDirection(&push, 1, 0xFFFFFFFF); // botones como entrada
+
+    while (1)
+    {
+        psb_check = XGpio_DiscreteRead(&push, 1);
+        dip_check = XGpio_DiscreteRead(&dip, 1);   // leo switches
+
+        xil_printf("Botones: 0x%x | Switches (PASO NCO): 0x%x\r\n", psb_check, dip_check);
+
+        // Escribimos el valor leído desde switches al registro 0 del IP FIR (PASO_W)
+        FIR_IP_mWriteReg(FIR_BASE_ADDR, FIR_IP_S00_AXI_SLV_REG0_OFFSET, dip_check);
+
+        // Para verificar lectura (opcional)
+        u32 paso_leido = FIR_IP_mReadReg(FIR_BASE_ADDR, FIR_IP_S00_AXI_SLV_REG0_OFFSET);
+        xil_printf("Valor escrito en FIR IP: %lu (0x%08lx)\r\n", paso_leido, paso_leido);
+
+        sleep(1);  // 1 segundo de espera
+    }
+
+    return 0;
+}

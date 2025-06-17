@@ -1,0 +1,15 @@
+{
+    "name": "fir-coeff-generator",
+    "version": "1.0.0",
+    "main": "generate_coeff.ts",
+    "scripts": {
+      "generate": "ts-node generate_coeff.ts",
+      "transform": "ts-node transform_coef.ts"
+    },
+    "dependencies": {},
+    "devDependencies": {
+      "ts-node": "^10.0.0",
+      "typescript": "^5.0.0"
+    }
+  }
+  

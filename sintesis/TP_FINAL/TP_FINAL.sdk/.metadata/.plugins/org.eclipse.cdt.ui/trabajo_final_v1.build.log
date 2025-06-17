@@ -1,0 +1,23 @@
+20:52:48 **** Incremental Build of configuration Debug for project trabajo_final_v1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/fir_controller.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/fir_controller.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../trabajo_final_v1_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/fir_controller.d" -MT"src/fir_controller.o" -o "src/fir_controller.o" "../src/fir_controller.c"
+'Finished building: ../src/fir_controller.c'
+' '
+'Building target: trabajo_final_v1.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../trabajo_final_v1_bsp/ps7_cortexa9_0/lib -o "trabajo_final_v1.elf"  ./src/fir_controller.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: trabajo_final_v1.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size trabajo_final_v1.elf  |tee "trabajo_final_v1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  23544	   1184	  22584	  47312	   b8d0	trabajo_final_v1.elf
+'Finished building: trabajo_final_v1.elf.size'
+' '
+
+20:52:49 Build Finished (took 1s.96ms)
+

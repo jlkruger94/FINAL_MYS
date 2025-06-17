@@ -1,0 +1,993 @@
+#-----------------------------------------------------------
+# Vivado v2018.1 (64-bit)
+# SW Build 2188600 on Wed Apr  4 18:40:38 MDT 2018
+# IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
+# Start of session at: Mon Jun 16 20:16:12 2025
+# Process ID: 13972
+# Current directory: E:/Especializacion_fiuba/MyS/TP_FINAL/sintesis/TP_FINAL/TP_FINAL.runs/system_fir_ip_0_0_synth_1
+# Command line: vivado.exe -log system_fir_ip_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source system_fir_ip_0_0.tcl
+# Log file: E:/Especializacion_fiuba/MyS/TP_FINAL/sintesis/TP_FINAL/TP_FINAL.runs/system_fir_ip_0_0_synth_1/system_fir_ip_0_0.vds
+# Journal file: E:/Especializacion_fiuba/MyS/TP_FINAL/sintesis/TP_FINAL/TP_FINAL.runs/system_fir_ip_0_0_synth_1\vivado.jou
+#-----------------------------------------------------------
+source system_fir_ip_0_0.tcl -notrace
+Command: synth_design -top system_fir_ip_0_0 -part xc7z010clg400-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 8984 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:11 . Memory (MB): peak = 380.746 ; gain = 100.949
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'system_fir_ip_0_0' [e:/Especializacion_fiuba/MyS/TP_FINAL/sintesis/TP_FINAL/TP_FINAL.srcs/sources_1/bd/system/ip/system_fir_ip_0_0/synth/system_fir_ip_0_0.vhd:84]
+	Parameter C_S00_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S00_AXI_ADDR_WIDTH bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'fir_ip_v1_0' declared at 'e:/Especializacion_fiuba/MyS/TP_FINAL/sintesis/TP_FINAL/TP_FINAL.srcs/sources_1/bd/system/ipshared/9190/hdl/fir_ip_v1_0.vhd:5' bound to instance 'U0' of component 'fir_ip_v1_0' [e:/Especializacion_fiuba/MyS/TP_FINAL/sintesis/TP_FINAL/TP_FINAL.srcs/sources_1/bd/system/ip/system_fir_ip_0_0/synth/system_fir_ip_0_0.vhd:152]
+INFO: [Synth 8-638] synthesizing module 'fir_ip_v1_0' [e:/Especializacion_fiuba/MyS/TP_FINAL/sintesis/TP_FINAL/TP_FINAL.srcs/sources_1/bd/system/ipshared/9190/hdl/fir_ip_v1_0.vhd:50]
+	Parameter C_S00_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S00_AXI_ADDR_WIDTH bound to: 4 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'fir_ip_v1_0_S00_AXI' declared at 'e:/Especializacion_fiuba/MyS/TP_FINAL/sintesis/TP_FINAL/TP_FINAL.srcs/sources_1/bd/system/ipshared/9190/hdl/fir_ip_v1_0_S00_AXI.vhd:5' bound to instance 'fir_ip_v1_0_S00_AXI_inst' of component 'fir_ip_v1_0_S00_AXI' [e:/Especializacion_fiuba/MyS/TP_FINAL/sintesis/TP_FINAL/TP_FINAL.srcs/sources_1/bd/system/ipshared/9190/hdl/fir_ip_v1_0.vhd:88]
+INFO: [Synth 8-638] synthesizing module 'fir_ip_v1_0_S00_AXI' [e:/Especializacion_fiuba/MyS/TP_FINAL/sintesis/TP_FINAL/TP_FINAL.srcs/sources_1/bd/system/ipshared/9190/hdl/fir_ip_v1_0_S00_AXI.vhd:87]
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 4 - type: integer 
+INFO: [Synth 8-226] default block is never used [e:/Especializacion_fiuba/MyS/TP_FINAL/sintesis/TP_FINAL/TP_FINAL.srcs/sources_1/bd/system/ipshared/9190/hdl/fir_ip_v1_0_S00_AXI.vhd:233]
+INFO: [Synth 8-226] default block is never used [e:/Especializacion_fiuba/MyS/TP_FINAL/sintesis/TP_FINAL/TP_FINAL.srcs/sources_1/bd/system/ipshared/9190/hdl/fir_ip_v1_0_S00_AXI.vhd:363]
+INFO: [Synth 8-3491] module 'filter_pkg' declared at 'e:/Especializacion_fiuba/MyS/TP_FINAL/sintesis/TP_FINAL/TP_FINAL.srcs/sources_1/bd/system/ipshared/9190/src/filter_pkg.vhd:5' bound to instance 'FIR_INST' of component 'filter_pkg' [e:/Especializacion_fiuba/MyS/TP_FINAL/sintesis/TP_FINAL/TP_FINAL.srcs/sources_1/bd/system/ipshared/9190/hdl/fir_ip_v1_0_S00_AXI.vhd:397]
+INFO: [Synth 8-638] synthesizing module 'filter_pkg' [e:/Especializacion_fiuba/MyS/TP_FINAL/sintesis/TP_FINAL/TP_FINAL.srcs/sources_1/bd/system/ipshared/9190/src/filter_pkg.vhd:14]
+	Parameter DATA_W bound to: 13 - type: integer 
+	Parameter ADDR_W bound to: 12 - type: integer 
+	Parameter modulo bound to: 32767 - type: integer 
+	Parameter PASO_W bound to: 6 - type: integer 
+INFO: [Synth 8-3491] module 'nco' declared at 'e:/Especializacion_fiuba/MyS/TP_FINAL/sintesis/TP_FINAL/TP_FINAL.srcs/sources_1/bd/system/ipshared/9190/src/nco.vhd:11' bound to instance 'nco_inst' of component 'nco' [e:/Especializacion_fiuba/MyS/TP_FINAL/sintesis/TP_FINAL/TP_FINAL.srcs/sources_1/bd/system/ipshared/9190/src/filter_pkg.vhd:66]
+INFO: [Synth 8-638] synthesizing module 'nco' [e:/Especializacion_fiuba/MyS/TP_FINAL/sintesis/TP_FINAL/TP_FINAL.srcs/sources_1/bd/system/ipshared/9190/src/nco.vhd:27]
+	Parameter DATA_W bound to: 13 - type: integer 
+	Parameter ADDR_W bound to: 12 - type: integer 
+	Parameter modulo bound to: 32767 - type: integer 
+	Parameter PASO_W bound to: 6 - type: integer 
+	Parameter Q bound to: 32767 - type: integer 
+	Parameter N bound to: 12 - type: integer 
+	Parameter INCREMENTO_W bound to: 6 - type: integer 
+INFO: [Synth 8-3491] module 'Acum_Fase' declared at 'e:/Especializacion_fiuba/MyS/TP_FINAL/sintesis/TP_FINAL/TP_FINAL.srcs/sources_1/bd/system/ipshared/9190/src/acum_fase.vhd:11' bound to instance 'af' of component 'acum_fase' [e:/Especializacion_fiuba/MyS/TP_FINAL/sintesis/TP_FINAL/TP_FINAL.srcs/sources_1/bd/system/ipshared/9190/src/nco.vhd:60]
+INFO: [Synth 8-638] synthesizing module 'Acum_Fase' [e:/Especializacion_fiuba/MyS/TP_FINAL/sintesis/TP_FINAL/TP_FINAL.srcs/sources_1/bd/system/ipshared/9190/src/acum_fase.vhd:24]
+	Parameter Q bound to: 32767 - type: integer 
+	Parameter N bound to: 12 - type: integer 
+	Parameter INCREMENTO_W bound to: 6 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Acum_Fase' (1#1) [e:/Especializacion_fiuba/MyS/TP_FINAL/sintesis/TP_FINAL/TP_FINAL.srcs/sources_1/bd/system/ipshared/9190/src/acum_fase.vhd:24]
+	Parameter DATA_W bound to: 13 - type: integer 
+	Parameter ADDR_W bound to: 12 - type: integer 
+INFO: [Synth 8-3491] module 'Sin_Cos' declared at 'e:/Especializacion_fiuba/MyS/TP_FINAL/sintesis/TP_FINAL/TP_FINAL.srcs/sources_1/bd/system/ipshared/9190/src/sin_cos.vhd:5' bound to instance 'ss' of component 'sin_cos' [e:/Especializacion_fiuba/MyS/TP_FINAL/sintesis/TP_FINAL/TP_FINAL.srcs/sources_1/bd/system/ipshared/9190/src/nco.vhd:72]
+INFO: [Synth 8-638] synthesizing module 'Sin_Cos' [e:/Especializacion_fiuba/MyS/TP_FINAL/sintesis/TP_FINAL/TP_FINAL.srcs/sources_1/bd/system/ipshared/9190/src/sin_cos.vhd:18]
+	Parameter DATA_W bound to: 13 - type: integer 
+	Parameter ADDR_W bound to: 12 - type: integer 
+	Parameter ADD_W bound to: 10 - type: integer 
+	Parameter DATA_W bound to: 11 - type: integer 
+INFO: [Synth 8-3491] module 'Sin_Rom' declared at 'e:/Especializacion_fiuba/MyS/TP_FINAL/sintesis/TP_FINAL/TP_FINAL.srcs/sources_1/bd/system/ipshared/9190/src/sin_rom.vhd:11' bound to instance 'Sin_Cos_Table' of component 'Sin_Rom' [e:/Especializacion_fiuba/MyS/TP_FINAL/sintesis/TP_FINAL/TP_FINAL.srcs/sources_1/bd/system/ipshared/9190/src/sin_cos.vhd:49]
+INFO: [Synth 8-638] synthesizing module 'Sin_Rom' [e:/Especializacion_fiuba/MyS/TP_FINAL/sintesis/TP_FINAL/TP_FINAL.srcs/sources_1/bd/system/ipshared/9190/src/sin_rom.vhd:25]
+	Parameter ADD_W bound to: 10 - type: integer 
+	Parameter DATA_W bound to: 11 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Sin_Rom' (2#1) [e:/Especializacion_fiuba/MyS/TP_FINAL/sintesis/TP_FINAL/TP_FINAL.srcs/sources_1/bd/system/ipshared/9190/src/sin_rom.vhd:25]
+INFO: [Synth 8-256] done synthesizing module 'Sin_Cos' (3#1) [e:/Especializacion_fiuba/MyS/TP_FINAL/sintesis/TP_FINAL/TP_FINAL.srcs/sources_1/bd/system/ipshared/9190/src/sin_cos.vhd:18]
+INFO: [Synth 8-256] done synthesizing module 'nco' (4#1) [e:/Especializacion_fiuba/MyS/TP_FINAL/sintesis/TP_FINAL/TP_FINAL.srcs/sources_1/bd/system/ipshared/9190/src/nco.vhd:27]
+INFO: [Synth 8-3491] module 'FIR_Notch' declared at 'e:/Especializacion_fiuba/MyS/TP_FINAL/sintesis/TP_FINAL/TP_FINAL.srcs/sources_1/bd/system/ipshared/9190/src/filter.vhd:6' bound to instance 'filter_DUT' of component 'FIR_Notch' [e:/Especializacion_fiuba/MyS/TP_FINAL/sintesis/TP_FINAL/TP_FINAL.srcs/sources_1/bd/system/ipshared/9190/src/filter_pkg.vhd:87]
+INFO: [Synth 8-638] synthesizing module 'FIR_Notch' [e:/Especializacion_fiuba/MyS/TP_FINAL/sintesis/TP_FINAL/TP_FINAL.srcs/sources_1/bd/system/ipshared/9190/src/filter.vhd:16]
+INFO: [Synth 8-638] synthesizing module 'shift_register' [e:/Especializacion_fiuba/MyS/TP_FINAL/sintesis/TP_FINAL/TP_FINAL.srcs/sources_1/bd/system/ipshared/9190/src/shift_register.vhd:19]
+	Parameter N bound to: 67 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'shift_register' (5#1) [e:/Especializacion_fiuba/MyS/TP_FINAL/sintesis/TP_FINAL/TP_FINAL.srcs/sources_1/bd/system/ipshared/9190/src/shift_register.vhd:19]
+INFO: [Synth 8-638] synthesizing module 'multiplier' [e:/Especializacion_fiuba/MyS/TP_FINAL/sintesis/TP_FINAL/TP_FINAL.srcs/sources_1/bd/system/ipshared/9190/src/multiplier.vhd:15]
+INFO: [Synth 8-256] done synthesizing module 'multiplier' (6#1) [e:/Especializacion_fiuba/MyS/TP_FINAL/sintesis/TP_FINAL/TP_FINAL.srcs/sources_1/bd/system/ipshared/9190/src/multiplier.vhd:15]
+INFO: [Synth 8-638] synthesizing module 'adder' [e:/Especializacion_fiuba/MyS/TP_FINAL/sintesis/TP_FINAL/TP_FINAL.srcs/sources_1/bd/system/ipshared/9190/src/adder.vhd:18]
+	Parameter N bound to: 67 - type: integer 
+WARNING: [Synth 8-6014] Unused sequential element acc_reg was removed.  [e:/Especializacion_fiuba/MyS/TP_FINAL/sintesis/TP_FINAL/TP_FINAL.srcs/sources_1/bd/system/ipshared/9190/src/adder.vhd:26]
+INFO: [Synth 8-256] done synthesizing module 'adder' (7#1) [e:/Especializacion_fiuba/MyS/TP_FINAL/sintesis/TP_FINAL/TP_FINAL.srcs/sources_1/bd/system/ipshared/9190/src/adder.vhd:18]
+INFO: [Synth 8-256] done synthesizing module 'FIR_Notch' (8#1) [e:/Especializacion_fiuba/MyS/TP_FINAL/sintesis/TP_FINAL/TP_FINAL.srcs/sources_1/bd/system/ipshared/9190/src/filter.vhd:16]
+	Parameter N bound to: 65 - type: integer 
+INFO: [Synth 8-3491] module 'gen_enable' declared at 'e:/Especializacion_fiuba/MyS/TP_FINAL/sintesis/TP_FINAL/TP_FINAL.srcs/sources_1/bd/system/ipshared/9190/src/generate_enable.vhd:5' bound to instance 'gen_ena' of component 'gen_enable' [e:/Especializacion_fiuba/MyS/TP_FINAL/sintesis/TP_FINAL/TP_FINAL.srcs/sources_1/bd/system/ipshared/9190/src/filter_pkg.vhd:97]
+INFO: [Synth 8-638] synthesizing module 'gen_enable' [e:/Especializacion_fiuba/MyS/TP_FINAL/sintesis/TP_FINAL/TP_FINAL.srcs/sources_1/bd/system/ipshared/9190/src/generate_enable.vhd:16]
+	Parameter N bound to: 65 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'gen_enable' (9#1) [e:/Especializacion_fiuba/MyS/TP_FINAL/sintesis/TP_FINAL/TP_FINAL.srcs/sources_1/bd/system/ipshared/9190/src/generate_enable.vhd:16]
+WARNING: [Synth 8-3848] Net rst_signal in module/entity filter_pkg does not have driver. [e:/Especializacion_fiuba/MyS/TP_FINAL/sintesis/TP_FINAL/TP_FINAL.srcs/sources_1/bd/system/ipshared/9190/src/filter_pkg.vhd:58]
+INFO: [Synth 8-256] done synthesizing module 'filter_pkg' (10#1) [e:/Especializacion_fiuba/MyS/TP_FINAL/sintesis/TP_FINAL/TP_FINAL.srcs/sources_1/bd/system/ipshared/9190/src/filter_pkg.vhd:14]
+WARNING: [Synth 8-6014] Unused sequential element loc_addr_reg was removed.  [e:/Especializacion_fiuba/MyS/TP_FINAL/sintesis/TP_FINAL/TP_FINAL.srcs/sources_1/bd/system/ipshared/9190/hdl/fir_ip_v1_0_S00_AXI.vhd:231]
+INFO: [Synth 8-256] done synthesizing module 'fir_ip_v1_0_S00_AXI' (11#1) [e:/Especializacion_fiuba/MyS/TP_FINAL/sintesis/TP_FINAL/TP_FINAL.srcs/sources_1/bd/system/ipshared/9190/hdl/fir_ip_v1_0_S00_AXI.vhd:87]
+INFO: [Synth 8-256] done synthesizing module 'fir_ip_v1_0' (12#1) [e:/Especializacion_fiuba/MyS/TP_FINAL/sintesis/TP_FINAL/TP_FINAL.srcs/sources_1/bd/system/ipshared/9190/hdl/fir_ip_v1_0.vhd:50]
+INFO: [Synth 8-256] done synthesizing module 'system_fir_ip_0_0' (13#1) [e:/Especializacion_fiuba/MyS/TP_FINAL/sintesis/TP_FINAL/TP_FINAL.srcs/sources_1/bd/system/ip/system_fir_ip_0_0/synth/system_fir_ip_0_0.vhd:84]
+WARNING: [Synth 8-3331] design adder has unconnected port data_in[0][31]
+WARNING: [Synth 8-3331] design adder has unconnected port data_in[0][30]
+WARNING: [Synth 8-3331] design adder has unconnected port data_in[0][29]
+WARNING: [Synth 8-3331] design adder has unconnected port data_in[0][28]
+WARNING: [Synth 8-3331] design adder has unconnected port data_in[0][27]
+WARNING: [Synth 8-3331] design adder has unconnected port data_in[0][26]
+WARNING: [Synth 8-3331] design adder has unconnected port data_in[0][25]
+WARNING: [Synth 8-3331] design adder has unconnected port data_in[0][24]
+WARNING: [Synth 8-3331] design adder has unconnected port data_in[1][31]
+WARNING: [Synth 8-3331] design adder has unconnected port data_in[1][30]
+WARNING: [Synth 8-3331] design adder has unconnected port data_in[1][29]
+WARNING: [Synth 8-3331] design adder has unconnected port data_in[1][28]
+WARNING: [Synth 8-3331] design adder has unconnected port data_in[1][27]
+WARNING: [Synth 8-3331] design adder has unconnected port data_in[1][26]
+WARNING: [Synth 8-3331] design adder has unconnected port data_in[1][25]
+WARNING: [Synth 8-3331] design adder has unconnected port data_in[1][24]
+WARNING: [Synth 8-3331] design adder has unconnected port data_in[2][31]
+WARNING: [Synth 8-3331] design adder has unconnected port data_in[2][30]
+WARNING: [Synth 8-3331] design adder has unconnected port data_in[2][29]
+WARNING: [Synth 8-3331] design adder has unconnected port data_in[2][28]
+WARNING: [Synth 8-3331] design adder has unconnected port data_in[2][27]
+WARNING: [Synth 8-3331] design adder has unconnected port data_in[2][26]
+WARNING: [Synth 8-3331] design adder has unconnected port data_in[2][25]
+WARNING: [Synth 8-3331] design adder has unconnected port data_in[2][24]
+WARNING: [Synth 8-3331] design adder has unconnected port data_in[3][31]
+WARNING: [Synth 8-3331] design adder has unconnected port data_in[3][30]
+WARNING: [Synth 8-3331] design adder has unconnected port data_in[3][29]
+WARNING: [Synth 8-3331] design adder has unconnected port data_in[3][28]
+WARNING: [Synth 8-3331] design adder has unconnected port data_in[3][27]
+WARNING: [Synth 8-3331] design adder has unconnected port data_in[3][26]
+WARNING: [Synth 8-3331] design adder has unconnected port data_in[3][25]
+WARNING: [Synth 8-3331] design adder has unconnected port data_in[3][24]
+WARNING: [Synth 8-3331] design adder has unconnected port data_in[4][31]
+WARNING: [Synth 8-3331] design adder has unconnected port data_in[4][30]
+WARNING: [Synth 8-3331] design adder has unconnected port data_in[4][29]
+WARNING: [Synth 8-3331] design adder has unconnected port data_in[4][28]
+WARNING: [Synth 8-3331] design adder has unconnected port data_in[4][27]
+WARNING: [Synth 8-3331] design adder has unconnected port data_in[4][26]
+WARNING: [Synth 8-3331] design adder has unconnected port data_in[4][25]
+WARNING: [Synth 8-3331] design adder has unconnected port data_in[4][24]
+WARNING: [Synth 8-3331] design adder has unconnected port data_in[5][31]
+WARNING: [Synth 8-3331] design adder has unconnected port data_in[5][30]
+WARNING: [Synth 8-3331] design adder has unconnected port data_in[5][29]
+WARNING: [Synth 8-3331] design adder has unconnected port data_in[5][28]
+WARNING: [Synth 8-3331] design adder has unconnected port data_in[5][27]
+WARNING: [Synth 8-3331] design adder has unconnected port data_in[5][26]
+WARNING: [Synth 8-3331] design adder has unconnected port data_in[5][25]
+WARNING: [Synth 8-3331] design adder has unconnected port data_in[5][24]
+WARNING: [Synth 8-3331] design adder has unconnected port data_in[6][31]
+WARNING: [Synth 8-3331] design adder has unconnected port data_in[6][30]
+WARNING: [Synth 8-3331] design adder has unconnected port data_in[6][29]
+WARNING: [Synth 8-3331] design adder has unconnected port data_in[6][28]
+WARNING: [Synth 8-3331] design adder has unconnected port data_in[6][27]
+WARNING: [Synth 8-3331] design adder has unconnected port data_in[6][26]
+WARNING: [Synth 8-3331] design adder has unconnected port data_in[6][25]
+WARNING: [Synth 8-3331] design adder has unconnected port data_in[6][24]
+WARNING: [Synth 8-3331] design adder has unconnected port data_in[7][31]
+WARNING: [Synth 8-3331] design adder has unconnected port data_in[7][30]
+WARNING: [Synth 8-3331] design adder has unconnected port data_in[7][29]
+WARNING: [Synth 8-3331] design adder has unconnected port data_in[7][28]
+WARNING: [Synth 8-3331] design adder has unconnected port data_in[7][27]
+WARNING: [Synth 8-3331] design adder has unconnected port data_in[7][26]
+WARNING: [Synth 8-3331] design adder has unconnected port data_in[7][25]
+WARNING: [Synth 8-3331] design adder has unconnected port data_in[7][24]
+WARNING: [Synth 8-3331] design adder has unconnected port data_in[8][31]
+WARNING: [Synth 8-3331] design adder has unconnected port data_in[8][30]
+WARNING: [Synth 8-3331] design adder has unconnected port data_in[8][29]
+WARNING: [Synth 8-3331] design adder has unconnected port data_in[8][28]
+WARNING: [Synth 8-3331] design adder has unconnected port data_in[8][27]
+WARNING: [Synth 8-3331] design adder has unconnected port data_in[8][26]
+WARNING: [Synth 8-3331] design adder has unconnected port data_in[8][25]
+WARNING: [Synth 8-3331] design adder has unconnected port data_in[8][24]
+WARNING: [Synth 8-3331] design adder has unconnected port data_in[9][31]
+WARNING: [Synth 8-3331] design adder has unconnected port data_in[9][30]
+WARNING: [Synth 8-3331] design adder has unconnected port data_in[9][29]
+WARNING: [Synth 8-3331] design adder has unconnected port data_in[9][28]
+WARNING: [Synth 8-3331] design adder has unconnected port data_in[9][27]
+WARNING: [Synth 8-3331] design adder has unconnected port data_in[9][26]
+WARNING: [Synth 8-3331] design adder has unconnected port data_in[9][25]
+WARNING: [Synth 8-3331] design adder has unconnected port data_in[9][24]
+WARNING: [Synth 8-3331] design adder has unconnected port data_in[10][31]
+WARNING: [Synth 8-3331] design adder has unconnected port data_in[10][30]
+WARNING: [Synth 8-3331] design adder has unconnected port data_in[10][29]
+WARNING: [Synth 8-3331] design adder has unconnected port data_in[10][28]
+WARNING: [Synth 8-3331] design adder has unconnected port data_in[10][27]
+WARNING: [Synth 8-3331] design adder has unconnected port data_in[10][26]
+WARNING: [Synth 8-3331] design adder has unconnected port data_in[10][25]
+WARNING: [Synth 8-3331] design adder has unconnected port data_in[10][24]
+WARNING: [Synth 8-3331] design adder has unconnected port data_in[11][31]
+WARNING: [Synth 8-3331] design adder has unconnected port data_in[11][30]
+WARNING: [Synth 8-3331] design adder has unconnected port data_in[11][29]
+WARNING: [Synth 8-3331] design adder has unconnected port data_in[11][28]
+WARNING: [Synth 8-3331] design adder has unconnected port data_in[11][27]
+WARNING: [Synth 8-3331] design adder has unconnected port data_in[11][26]
+WARNING: [Synth 8-3331] design adder has unconnected port data_in[11][25]
+WARNING: [Synth 8-3331] design adder has unconnected port data_in[11][24]
+WARNING: [Synth 8-3331] design adder has unconnected port data_in[12][31]
+WARNING: [Synth 8-3331] design adder has unconnected port data_in[12][30]
+WARNING: [Synth 8-3331] design adder has unconnected port data_in[12][29]
+WARNING: [Synth 8-3331] design adder has unconnected port data_in[12][28]
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:20 ; elapsed = 00:00:28 . Memory (MB): peak = 462.414 ; gain = 182.617
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+WARNING: [Synth 8-3295] tying undriven pin filter_DUT:rst to constant 0 [e:/Especializacion_fiuba/MyS/TP_FINAL/sintesis/TP_FINAL/TP_FINAL.srcs/sources_1/bd/system/ipshared/9190/src/filter_pkg.vhd:87]
+WARNING: [Synth 8-3295] tying undriven pin gen_ena:rst to constant 0 [e:/Especializacion_fiuba/MyS/TP_FINAL/sintesis/TP_FINAL/TP_FINAL.srcs/sources_1/bd/system/ipshared/9190/src/filter_pkg.vhd:97]
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:21 ; elapsed = 00:00:28 . Memory (MB): peak = 462.414 ; gain = 182.617
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:21 ; elapsed = 00:00:28 . Memory (MB): peak = 462.414 ; gain = 182.617
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.154 . Memory (MB): peak = 771.750 ; gain = 1.262
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:37 ; elapsed = 00:00:52 . Memory (MB): peak = 771.750 ; gain = 491.953
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z010clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:37 ; elapsed = 00:00:52 . Memory (MB): peak = 771.750 ; gain = 491.953
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:37 ; elapsed = 00:00:52 . Memory (MB): peak = 771.750 ; gain = 491.953
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [e:/Especializacion_fiuba/MyS/TP_FINAL/sintesis/TP_FINAL/TP_FINAL.srcs/sources_1/bd/system/ipshared/9190/src/acum_fase.vhd:32]
+WARNING: [Synth 8-6040] Register addr1_r_reg driving address of a ROM cannot be packed in BRAM/URAM because of presence of initial value.
+WARNING: [Synth 8-6040] Register addr2_r_reg driving address of a ROM cannot be packed in BRAM/URAM because of presence of initial value.
+INFO: [Synth 8-5546] ROM "ena_o" won't be mapped to RAM because it is too sparse
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:38 ; elapsed = 00:00:54 . Memory (MB): peak = 771.750 ; gain = 491.953
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	  67 Input     24 Bit       Adders := 1     
+	   2 Input     12 Bit       Adders := 2     
+	   3 Input     12 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	               32 Bit    Registers := 72    
+	               24 Bit    Registers := 1     
+	               12 Bit    Registers := 69    
+	               10 Bit    Registers := 2     
+	                7 Bit    Registers := 1     
+	                4 Bit    Registers := 2     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 7     
++---Multipliers : 
+	                12x32  Multipliers := 67    
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 4     
+	   4 Input     32 Bit        Muxes := 5     
+	   2 Input     12 Bit        Muxes := 1     
+	   2 Input     11 Bit        Muxes := 2     
+	   2 Input     10 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 6     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module Acum_Fase 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     12 Bit       Adders := 1     
+	   3 Input     12 Bit       Adders := 1     
++---Registers : 
+	               12 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     12 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 1     
+Module Sin_Rom 
+Detailed RTL Component Info : 
++---Registers : 
+	               10 Bit    Registers := 2     
+Module Sin_Cos 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---Muxes : 
+	   2 Input     11 Bit        Muxes := 2     
+	   2 Input     10 Bit        Muxes := 1     
+Module shift_register 
+Detailed RTL Component Info : 
++---Registers : 
+	               12 Bit    Registers := 67    
+Module adder 
+Detailed RTL Component Info : 
++---Adders : 
+	  67 Input     24 Bit       Adders := 1     
++---Registers : 
+	               24 Bit    Registers := 1     
+	               12 Bit    Registers := 1     
+Module multiplier 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
++---Multipliers : 
+	                12x32  Multipliers := 1     
+Module FIR_Notch 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     12 Bit       Adders := 1     
+Module gen_enable 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      7 Bit       Adders := 1     
++---Registers : 
+	                7 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      7 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module fir_ip_v1_0_S00_AXI 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 5     
+	                4 Bit    Registers := 2     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 6     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 4     
+	   4 Input     32 Bit        Muxes := 5     
+	   2 Input      1 Bit        Muxes := 5     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 80 (col length:40)
+BRAMs: 120 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5546] ROM "U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/gen_ena/ena_o" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-6040] Register U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/nco_inst/ss/Sin_Cos_Table/addr1_r_reg driving address of a ROM cannot be packed in BRAM/URAM because of presence of initial value.
+WARNING: [Synth 8-6040] Register U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/nco_inst/ss/Sin_Cos_Table/addr2_r_reg driving address of a ROM cannot be packed in BRAM/URAM because of presence of initial value.
+WARNING: [Synth 8-6014] Unused sequential element U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/SHIFT_REG/regs_reg[66] was removed.  [e:/Especializacion_fiuba/MyS/TP_FINAL/sintesis/TP_FINAL/TP_FINAL.srcs/sources_1/bd/system/ipshared/9190/src/shift_register.vhd:26]
+DSP Report: Generating DSP U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[0].MULTi/internal_result_reg, operation Mode is: (A2*(B:0x12))'.
+DSP Report: register U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/SHIFT_REG/regs_reg[0] is absorbed into DSP U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[0].MULTi/internal_result_reg.
+DSP Report: register U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[0].MULTi/internal_result_reg is absorbed into DSP U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[0].MULTi/internal_result_reg.
+DSP Report: operator U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[0].MULTi/internal_result0 is absorbed into DSP U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[0].MULTi/internal_result_reg.
+DSP Report: Generating DSP U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[2].MULTi/internal_result_reg, operation Mode is: (A2*(B:0x43))'.
+DSP Report: register U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/SHIFT_REG/regs_reg[2] is absorbed into DSP U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[2].MULTi/internal_result_reg.
+DSP Report: register U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[2].MULTi/internal_result_reg is absorbed into DSP U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[2].MULTi/internal_result_reg.
+DSP Report: operator U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[2].MULTi/internal_result0 is absorbed into DSP U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[2].MULTi/internal_result_reg.
+DSP Report: Generating DSP U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[3].MULTi/internal_result_reg, operation Mode is: (ACIN2*(B:0x3ffd2))'.
+DSP Report: register U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/SHIFT_REG/regs_reg[3] is absorbed into DSP U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[3].MULTi/internal_result_reg.
+DSP Report: register U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[3].MULTi/internal_result_reg is absorbed into DSP U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[3].MULTi/internal_result_reg.
+DSP Report: operator U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[3].MULTi/internal_result0 is absorbed into DSP U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[3].MULTi/internal_result_reg.
+DSP Report: Generating DSP U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[4].MULTi/internal_result_reg, operation Mode is: (ACIN2*(B:0x5a))'.
+DSP Report: register U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/SHIFT_REG/regs_reg[4] is absorbed into DSP U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[4].MULTi/internal_result_reg.
+DSP Report: register U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[4].MULTi/internal_result_reg is absorbed into DSP U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[4].MULTi/internal_result_reg.
+DSP Report: operator U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[4].MULTi/internal_result0 is absorbed into DSP U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[4].MULTi/internal_result_reg.
+DSP Report: Generating DSP U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[5].MULTi/internal_result_reg, operation Mode is: (ACIN2*(B:0x3ffe9))'.
+DSP Report: register U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/SHIFT_REG/regs_reg[5] is absorbed into DSP U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[5].MULTi/internal_result_reg.
+DSP Report: register U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[5].MULTi/internal_result_reg is absorbed into DSP U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[5].MULTi/internal_result_reg.
+DSP Report: operator U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[5].MULTi/internal_result0 is absorbed into DSP U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[5].MULTi/internal_result_reg.
+DSP Report: Generating DSP U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[6].MULTi/internal_result_reg, operation Mode is: (ACIN2*(B:0x32))'.
+DSP Report: register U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/SHIFT_REG/regs_reg[6] is absorbed into DSP U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[6].MULTi/internal_result_reg.
+DSP Report: register U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[6].MULTi/internal_result_reg is absorbed into DSP U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[6].MULTi/internal_result_reg.
+DSP Report: operator U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[6].MULTi/internal_result0 is absorbed into DSP U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[6].MULTi/internal_result_reg.
+DSP Report: Generating DSP U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[7].MULTi/internal_result_reg, operation Mode is: (ACIN2*(B:0x28))'.
+DSP Report: register U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/SHIFT_REG/regs_reg[7] is absorbed into DSP U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[7].MULTi/internal_result_reg.
+DSP Report: register U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[7].MULTi/internal_result_reg is absorbed into DSP U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[7].MULTi/internal_result_reg.
+DSP Report: operator U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[7].MULTi/internal_result0 is absorbed into DSP U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[7].MULTi/internal_result_reg.
+DSP Report: Generating DSP U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[9].MULTi/internal_result_reg, operation Mode is: (A2*(B:0x3a))'.
+DSP Report: register U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/SHIFT_REG/regs_reg[9] is absorbed into DSP U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[9].MULTi/internal_result_reg.
+DSP Report: register U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[9].MULTi/internal_result_reg is absorbed into DSP U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[9].MULTi/internal_result_reg.
+DSP Report: operator U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[9].MULTi/internal_result0 is absorbed into DSP U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[9].MULTi/internal_result_reg.
+DSP Report: Generating DSP U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[12].MULTi/internal_result_reg, operation Mode is: (A2*(B:0x22))'.
+DSP Report: register U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/SHIFT_REG/regs_reg[12] is absorbed into DSP U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[12].MULTi/internal_result_reg.
+DSP Report: register U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[12].MULTi/internal_result_reg is absorbed into DSP U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[12].MULTi/internal_result_reg.
+DSP Report: operator U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[12].MULTi/internal_result0 is absorbed into DSP U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[12].MULTi/internal_result_reg.
+DSP Report: Generating DSP U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[13].MULTi/internal_result_reg, operation Mode is: (ACIN2*(B:0x3ffda))'.
+DSP Report: register U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/SHIFT_REG/regs_reg[13] is absorbed into DSP U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[13].MULTi/internal_result_reg.
+DSP Report: register U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[13].MULTi/internal_result_reg is absorbed into DSP U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[13].MULTi/internal_result_reg.
+DSP Report: operator U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[13].MULTi/internal_result0 is absorbed into DSP U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[13].MULTi/internal_result_reg.
+DSP Report: Generating DSP U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[16].MULTi/internal_result_reg, operation Mode is: (A2*(B:0x3ffb2))'.
+DSP Report: register U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/SHIFT_REG/regs_reg[16] is absorbed into DSP U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[16].MULTi/internal_result_reg.
+DSP Report: register U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[16].MULTi/internal_result_reg is absorbed into DSP U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[16].MULTi/internal_result_reg.
+DSP Report: operator U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[16].MULTi/internal_result0 is absorbed into DSP U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[16].MULTi/internal_result_reg.
+DSP Report: Generating DSP U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[17].MULTi/internal_result_reg, operation Mode is: (ACIN2*(B:0x3ffef))'.
+DSP Report: register U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/SHIFT_REG/regs_reg[17] is absorbed into DSP U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[17].MULTi/internal_result_reg.
+DSP Report: register U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[17].MULTi/internal_result_reg is absorbed into DSP U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[17].MULTi/internal_result_reg.
+DSP Report: operator U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[17].MULTi/internal_result0 is absorbed into DSP U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[17].MULTi/internal_result_reg.
+DSP Report: Generating DSP U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[18].MULTi/internal_result_reg, operation Mode is: (ACIN2*(B:0x3ffce))'.
+DSP Report: register U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/SHIFT_REG/regs_reg[18] is absorbed into DSP U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[18].MULTi/internal_result_reg.
+DSP Report: register U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[18].MULTi/internal_result_reg is absorbed into DSP U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[18].MULTi/internal_result_reg.
+DSP Report: operator U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[18].MULTi/internal_result0 is absorbed into DSP U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[18].MULTi/internal_result_reg.
+DSP Report: Generating DSP U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[19].MULTi/internal_result_reg, operation Mode is: (ACIN2*(B:0x3ffaa))'.
+DSP Report: register U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/SHIFT_REG/regs_reg[19] is absorbed into DSP U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[19].MULTi/internal_result_reg.
+DSP Report: register U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[19].MULTi/internal_result_reg is absorbed into DSP U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[19].MULTi/internal_result_reg.
+DSP Report: operator U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[19].MULTi/internal_result0 is absorbed into DSP U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[19].MULTi/internal_result_reg.
+DSP Report: Generating DSP U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[21].MULTi/internal_result_reg, operation Mode is: (A2*(B:0x3ffbb))'.
+DSP Report: register U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/SHIFT_REG/regs_reg[21] is absorbed into DSP U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[21].MULTi/internal_result_reg.
+DSP Report: register U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[21].MULTi/internal_result_reg is absorbed into DSP U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[21].MULTi/internal_result_reg.
+DSP Report: operator U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[21].MULTi/internal_result0 is absorbed into DSP U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[21].MULTi/internal_result_reg.
+DSP Report: Generating DSP U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[22].MULTi/internal_result_reg, operation Mode is: (ACIN2*(B:0x3ffda))'.
+DSP Report: register U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/SHIFT_REG/regs_reg[22] is absorbed into DSP U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[22].MULTi/internal_result_reg.
+DSP Report: register U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[22].MULTi/internal_result_reg is absorbed into DSP U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[22].MULTi/internal_result_reg.
+DSP Report: operator U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[22].MULTi/internal_result0 is absorbed into DSP U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[22].MULTi/internal_result_reg.
+DSP Report: Generating DSP U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[23].MULTi/internal_result_reg, operation Mode is: (ACIN2*(B:0x31))'.
+DSP Report: register U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/SHIFT_REG/regs_reg[23] is absorbed into DSP U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[23].MULTi/internal_result_reg.
+DSP Report: register U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[23].MULTi/internal_result_reg is absorbed into DSP U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[23].MULTi/internal_result_reg.
+DSP Report: operator U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[23].MULTi/internal_result0 is absorbed into DSP U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[23].MULTi/internal_result_reg.
+DSP Report: Generating DSP U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[24].MULTi/internal_result_reg, operation Mode is: (ACIN2*(B:0x3ffcc))'.
+DSP Report: register U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/SHIFT_REG/regs_reg[24] is absorbed into DSP U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[24].MULTi/internal_result_reg.
+DSP Report: register U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[24].MULTi/internal_result_reg is absorbed into DSP U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[24].MULTi/internal_result_reg.
+DSP Report: operator U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[24].MULTi/internal_result0 is absorbed into DSP U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[24].MULTi/internal_result_reg.
+DSP Report: Generating DSP U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[25].MULTi/internal_result_reg, operation Mode is: (ACIN2*(B:0x48))'.
+DSP Report: register U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/SHIFT_REG/regs_reg[25] is absorbed into DSP U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[25].MULTi/internal_result_reg.
+DSP Report: register U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[25].MULTi/internal_result_reg is absorbed into DSP U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[25].MULTi/internal_result_reg.
+DSP Report: operator U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[25].MULTi/internal_result0 is absorbed into DSP U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[25].MULTi/internal_result_reg.
+DSP Report: Generating DSP U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[26].MULTi/internal_result_reg, operation Mode is: (ACIN2*(B:0x6b))'.
+DSP Report: register U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/SHIFT_REG/regs_reg[26] is absorbed into DSP U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[26].MULTi/internal_result_reg.
+DSP Report: register U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[26].MULTi/internal_result_reg is absorbed into DSP U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[26].MULTi/internal_result_reg.
+DSP Report: operator U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[26].MULTi/internal_result0 is absorbed into DSP U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[26].MULTi/internal_result_reg.
+DSP Report: Generating DSP U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[28].MULTi/internal_result_reg, operation Mode is: (A2*(B:0xea))'.
+DSP Report: register U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/SHIFT_REG/regs_reg[28] is absorbed into DSP U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[28].MULTi/internal_result_reg.
+DSP Report: register U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[28].MULTi/internal_result_reg is absorbed into DSP U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[28].MULTi/internal_result_reg.
+DSP Report: operator U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[28].MULTi/internal_result0 is absorbed into DSP U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[28].MULTi/internal_result_reg.
+DSP Report: Generating DSP U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[29].MULTi/internal_result_reg, operation Mode is: (ACIN2*(B:0x72))'.
+DSP Report: register U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/SHIFT_REG/regs_reg[29] is absorbed into DSP U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[29].MULTi/internal_result_reg.
+DSP Report: register U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[29].MULTi/internal_result_reg is absorbed into DSP U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[29].MULTi/internal_result_reg.
+DSP Report: operator U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[29].MULTi/internal_result0 is absorbed into DSP U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[29].MULTi/internal_result_reg.
+DSP Report: Generating DSP U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[30].MULTi/internal_result_reg, operation Mode is: (ACIN2*(B:0x26))'.
+DSP Report: register U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/SHIFT_REG/regs_reg[30] is absorbed into DSP U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[30].MULTi/internal_result_reg.
+DSP Report: register U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[30].MULTi/internal_result_reg is absorbed into DSP U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[30].MULTi/internal_result_reg.
+DSP Report: operator U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[30].MULTi/internal_result0 is absorbed into DSP U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[30].MULTi/internal_result_reg.
+DSP Report: Generating DSP U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[31].MULTi/internal_result_reg, operation Mode is: (ACIN2*(B:0x1fb))'.
+DSP Report: register U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/SHIFT_REG/regs_reg[31] is absorbed into DSP U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[31].MULTi/internal_result_reg.
+DSP Report: register U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[31].MULTi/internal_result_reg is absorbed into DSP U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[31].MULTi/internal_result_reg.
+DSP Report: operator U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[31].MULTi/internal_result0 is absorbed into DSP U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[31].MULTi/internal_result_reg.
+DSP Report: Generating DSP U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[32].MULTi/internal_result_reg, operation Mode is: (ACIN2*(B:0x3fedd))'.
+DSP Report: register U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/SHIFT_REG/regs_reg[32] is absorbed into DSP U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[32].MULTi/internal_result_reg.
+DSP Report: register U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[32].MULTi/internal_result_reg is absorbed into DSP U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[32].MULTi/internal_result_reg.
+DSP Report: operator U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[32].MULTi/internal_result0 is absorbed into DSP U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[32].MULTi/internal_result_reg.
+DSP Report: Generating DSP U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[33].MULTi/internal_result_reg, operation Mode is: (ACIN2*(B:0x2e5))'.
+DSP Report: register U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/SHIFT_REG/regs_reg[33] is absorbed into DSP U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[33].MULTi/internal_result_reg.
+DSP Report: register U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[33].MULTi/internal_result_reg is absorbed into DSP U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[33].MULTi/internal_result_reg.
+DSP Report: operator U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[33].MULTi/internal_result0 is absorbed into DSP U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[33].MULTi/internal_result_reg.
+DSP Report: Generating DSP U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[34].MULTi/internal_result_reg, operation Mode is: (ACIN2*(B:0x3fedd))'.
+DSP Report: register U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/SHIFT_REG/regs_reg[34] is absorbed into DSP U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[34].MULTi/internal_result_reg.
+DSP Report: register U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[34].MULTi/internal_result_reg is absorbed into DSP U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[34].MULTi/internal_result_reg.
+DSP Report: operator U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[34].MULTi/internal_result0 is absorbed into DSP U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[34].MULTi/internal_result_reg.
+DSP Report: Generating DSP U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[35].MULTi/internal_result_reg, operation Mode is: (ACIN2*(B:0x1fb))'.
+DSP Report: register U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/SHIFT_REG/regs_reg[35] is absorbed into DSP U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[35].MULTi/internal_result_reg.
+DSP Report: register U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[35].MULTi/internal_result_reg is absorbed into DSP U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[35].MULTi/internal_result_reg.
+DSP Report: operator U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[35].MULTi/internal_result0 is absorbed into DSP U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[35].MULTi/internal_result_reg.
+DSP Report: Generating DSP U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[36].MULTi/internal_result_reg, operation Mode is: (ACIN2*(B:0x26))'.
+DSP Report: register U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/SHIFT_REG/regs_reg[36] is absorbed into DSP U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[36].MULTi/internal_result_reg.
+DSP Report: register U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[36].MULTi/internal_result_reg is absorbed into DSP U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[36].MULTi/internal_result_reg.
+DSP Report: operator U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[36].MULTi/internal_result0 is absorbed into DSP U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[36].MULTi/internal_result_reg.
+DSP Report: Generating DSP U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[37].MULTi/internal_result_reg, operation Mode is: (ACIN2*(B:0x72))'.
+DSP Report: register U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/SHIFT_REG/regs_reg[37] is absorbed into DSP U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[37].MULTi/internal_result_reg.
+DSP Report: register U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[37].MULTi/internal_result_reg is absorbed into DSP U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[37].MULTi/internal_result_reg.
+DSP Report: operator U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[37].MULTi/internal_result0 is absorbed into DSP U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[37].MULTi/internal_result_reg.
+DSP Report: Generating DSP U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[38].MULTi/internal_result_reg, operation Mode is: (ACIN2*(B:0xea))'.
+DSP Report: register U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/SHIFT_REG/regs_reg[38] is absorbed into DSP U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[38].MULTi/internal_result_reg.
+DSP Report: register U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[38].MULTi/internal_result_reg is absorbed into DSP U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[38].MULTi/internal_result_reg.
+DSP Report: operator U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[38].MULTi/internal_result0 is absorbed into DSP U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[38].MULTi/internal_result_reg.
+DSP Report: Generating DSP U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[40].MULTi/internal_result_reg, operation Mode is: (A2*(B:0x6b))'.
+DSP Report: register U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/SHIFT_REG/regs_reg[40] is absorbed into DSP U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[40].MULTi/internal_result_reg.
+DSP Report: register U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[40].MULTi/internal_result_reg is absorbed into DSP U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[40].MULTi/internal_result_reg.
+DSP Report: operator U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[40].MULTi/internal_result0 is absorbed into DSP U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[40].MULTi/internal_result_reg.
+DSP Report: Generating DSP U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[41].MULTi/internal_result_reg, operation Mode is: (ACIN2*(B:0x48))'.
+DSP Report: register U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/SHIFT_REG/regs_reg[41] is absorbed into DSP U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[41].MULTi/internal_result_reg.
+DSP Report: register U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[41].MULTi/internal_result_reg is absorbed into DSP U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[41].MULTi/internal_result_reg.
+DSP Report: operator U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[41].MULTi/internal_result0 is absorbed into DSP U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[41].MULTi/internal_result_reg.
+DSP Report: Generating DSP U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[42].MULTi/internal_result_reg, operation Mode is: (ACIN2*(B:0x3ffcc))'.
+DSP Report: register U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/SHIFT_REG/regs_reg[42] is absorbed into DSP U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[42].MULTi/internal_result_reg.
+DSP Report: register U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[42].MULTi/internal_result_reg is absorbed into DSP U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[42].MULTi/internal_result_reg.
+DSP Report: operator U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[42].MULTi/internal_result0 is absorbed into DSP U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[42].MULTi/internal_result_reg.
+DSP Report: Generating DSP U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[43].MULTi/internal_result_reg, operation Mode is: (ACIN2*(B:0x31))'.
+DSP Report: register U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/SHIFT_REG/regs_reg[43] is absorbed into DSP U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[43].MULTi/internal_result_reg.
+DSP Report: register U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[43].MULTi/internal_result_reg is absorbed into DSP U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[43].MULTi/internal_result_reg.
+DSP Report: operator U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[43].MULTi/internal_result0 is absorbed into DSP U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[43].MULTi/internal_result_reg.
+DSP Report: Generating DSP U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[44].MULTi/internal_result_reg, operation Mode is: (ACIN2*(B:0x3ffda))'.
+DSP Report: register U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/SHIFT_REG/regs_reg[44] is absorbed into DSP U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[44].MULTi/internal_result_reg.
+DSP Report: register U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[44].MULTi/internal_result_reg is absorbed into DSP U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[44].MULTi/internal_result_reg.
+DSP Report: operator U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[44].MULTi/internal_result0 is absorbed into DSP U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[44].MULTi/internal_result_reg.
+DSP Report: Generating DSP U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[45].MULTi/internal_result_reg, operation Mode is: (ACIN2*(B:0x3ffbb))'.
+DSP Report: register U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/SHIFT_REG/regs_reg[45] is absorbed into DSP U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[45].MULTi/internal_result_reg.
+DSP Report: register U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[45].MULTi/internal_result_reg is absorbed into DSP U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[45].MULTi/internal_result_reg.
+DSP Report: operator U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[45].MULTi/internal_result0 is absorbed into DSP U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[45].MULTi/internal_result_reg.
+DSP Report: Generating DSP U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[47].MULTi/internal_result_reg, operation Mode is: (A2*(B:0x3ffaa))'.
+DSP Report: register U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/SHIFT_REG/regs_reg[47] is absorbed into DSP U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[47].MULTi/internal_result_reg.
+DSP Report: register U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[47].MULTi/internal_result_reg is absorbed into DSP U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[47].MULTi/internal_result_reg.
+DSP Report: operator U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[47].MULTi/internal_result0 is absorbed into DSP U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[47].MULTi/internal_result_reg.
+DSP Report: Generating DSP U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[48].MULTi/internal_result_reg, operation Mode is: (ACIN2*(B:0x3ffce))'.
+DSP Report: register U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/SHIFT_REG/regs_reg[48] is absorbed into DSP U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[48].MULTi/internal_result_reg.
+DSP Report: register U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[48].MULTi/internal_result_reg is absorbed into DSP U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[48].MULTi/internal_result_reg.
+DSP Report: operator U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[48].MULTi/internal_result0 is absorbed into DSP U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[48].MULTi/internal_result_reg.
+DSP Report: Generating DSP U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[49].MULTi/internal_result_reg, operation Mode is: (ACIN2*(B:0x3ffef))'.
+DSP Report: register U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/SHIFT_REG/regs_reg[49] is absorbed into DSP U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[49].MULTi/internal_result_reg.
+DSP Report: register U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[49].MULTi/internal_result_reg is absorbed into DSP U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[49].MULTi/internal_result_reg.
+DSP Report: operator U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[49].MULTi/internal_result0 is absorbed into DSP U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[49].MULTi/internal_result_reg.
+DSP Report: Generating DSP U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[50].MULTi/internal_result_reg, operation Mode is: (ACIN2*(B:0x3ffb2))'.
+DSP Report: register U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/SHIFT_REG/regs_reg[50] is absorbed into DSP U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[50].MULTi/internal_result_reg.
+DSP Report: register U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[50].MULTi/internal_result_reg is absorbed into DSP U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[50].MULTi/internal_result_reg.
+DSP Report: operator U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[50].MULTi/internal_result0 is absorbed into DSP U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[50].MULTi/internal_result_reg.
+DSP Report: Generating DSP U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[53].MULTi/internal_result_reg, operation Mode is: (A2*(B:0x3ffda))'.
+DSP Report: register U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/SHIFT_REG/regs_reg[53] is absorbed into DSP U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[53].MULTi/internal_result_reg.
+DSP Report: register U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[53].MULTi/internal_result_reg is absorbed into DSP U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[53].MULTi/internal_result_reg.
+DSP Report: operator U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[53].MULTi/internal_result0 is absorbed into DSP U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[53].MULTi/internal_result_reg.
+DSP Report: Generating DSP U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[54].MULTi/internal_result_reg, operation Mode is: (ACIN2*(B:0x22))'.
+DSP Report: register U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/SHIFT_REG/regs_reg[54] is absorbed into DSP U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[54].MULTi/internal_result_reg.
+DSP Report: register U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[54].MULTi/internal_result_reg is absorbed into DSP U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[54].MULTi/internal_result_reg.
+DSP Report: operator U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[54].MULTi/internal_result0 is absorbed into DSP U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[54].MULTi/internal_result_reg.
+DSP Report: Generating DSP U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[57].MULTi/internal_result_reg, operation Mode is: (A2*(B:0x3a))'.
+DSP Report: register U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/SHIFT_REG/regs_reg[57] is absorbed into DSP U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[57].MULTi/internal_result_reg.
+DSP Report: register U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[57].MULTi/internal_result_reg is absorbed into DSP U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[57].MULTi/internal_result_reg.
+DSP Report: operator U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[57].MULTi/internal_result0 is absorbed into DSP U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[57].MULTi/internal_result_reg.
+DSP Report: Generating DSP U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[59].MULTi/internal_result_reg, operation Mode is: (A2*(B:0x28))'.
+DSP Report: register U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/SHIFT_REG/regs_reg[59] is absorbed into DSP U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[59].MULTi/internal_result_reg.
+DSP Report: register U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[59].MULTi/internal_result_reg is absorbed into DSP U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[59].MULTi/internal_result_reg.
+DSP Report: operator U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[59].MULTi/internal_result0 is absorbed into DSP U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[59].MULTi/internal_result_reg.
+DSP Report: Generating DSP U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[60].MULTi/internal_result_reg, operation Mode is: (ACIN2*(B:0x32))'.
+DSP Report: register U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/SHIFT_REG/regs_reg[60] is absorbed into DSP U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[60].MULTi/internal_result_reg.
+DSP Report: register U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[60].MULTi/internal_result_reg is absorbed into DSP U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[60].MULTi/internal_result_reg.
+DSP Report: operator U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[60].MULTi/internal_result0 is absorbed into DSP U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[60].MULTi/internal_result_reg.
+DSP Report: Generating DSP U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[61].MULTi/internal_result_reg, operation Mode is: (ACIN2*(B:0x3ffe9))'.
+DSP Report: register U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/SHIFT_REG/regs_reg[61] is absorbed into DSP U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[61].MULTi/internal_result_reg.
+DSP Report: register U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[61].MULTi/internal_result_reg is absorbed into DSP U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[61].MULTi/internal_result_reg.
+DSP Report: operator U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[61].MULTi/internal_result0 is absorbed into DSP U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[61].MULTi/internal_result_reg.
+DSP Report: Generating DSP U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[62].MULTi/internal_result_reg, operation Mode is: (ACIN2*(B:0x5a))'.
+DSP Report: register U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/SHIFT_REG/regs_reg[62] is absorbed into DSP U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[62].MULTi/internal_result_reg.
+DSP Report: register U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[62].MULTi/internal_result_reg is absorbed into DSP U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[62].MULTi/internal_result_reg.
+DSP Report: operator U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[62].MULTi/internal_result0 is absorbed into DSP U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[62].MULTi/internal_result_reg.
+DSP Report: Generating DSP U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[63].MULTi/internal_result_reg, operation Mode is: (ACIN2*(B:0x3ffd2))'.
+DSP Report: register U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/SHIFT_REG/regs_reg[63] is absorbed into DSP U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[63].MULTi/internal_result_reg.
+DSP Report: register U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[63].MULTi/internal_result_reg is absorbed into DSP U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[63].MULTi/internal_result_reg.
+DSP Report: operator U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[63].MULTi/internal_result0 is absorbed into DSP U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[63].MULTi/internal_result_reg.
+DSP Report: Generating DSP U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[64].MULTi/internal_result_reg, operation Mode is: (ACIN2*(B:0x43))'.
+DSP Report: register U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/SHIFT_REG/regs_reg[64] is absorbed into DSP U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[64].MULTi/internal_result_reg.
+DSP Report: register U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[64].MULTi/internal_result_reg is absorbed into DSP U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[64].MULTi/internal_result_reg.
+DSP Report: operator U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[64].MULTi/internal_result0 is absorbed into DSP U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[64].MULTi/internal_result_reg.
+DSP Report: Generating DSP U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[66].MULTi/internal_result_reg, operation Mode is: (A2*(B:0x12))'.
+DSP Report: register U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/SHIFT_REG/regs_reg[66] is absorbed into DSP U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[66].MULTi/internal_result_reg.
+DSP Report: register U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[66].MULTi/internal_result_reg is absorbed into DSP U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[66].MULTi/internal_result_reg.
+DSP Report: operator U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[66].MULTi/internal_result0 is absorbed into DSP U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[66].MULTi/internal_result_reg.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[1].MULTi/internal_result_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[1].MULTi/internal_result_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[65].MULTi/internal_result_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[65].MULTi/internal_result_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[55].MULTi/internal_result_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[52].MULTi/internal_result_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[51].MULTi/internal_result_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[52].MULTi/internal_result_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[51].MULTi/internal_result_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[51].MULTi/internal_result_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[39].MULTi/internal_result_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[39].MULTi/internal_result_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[39].MULTi/internal_result_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[27].MULTi/internal_result_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[27].MULTi/internal_result_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[27].MULTi/internal_result_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[14].MULTi/internal_result_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[15].MULTi/internal_result_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[14].MULTi/internal_result_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[15].MULTi/internal_result_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[15].MULTi/internal_result_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[11].MULTi/internal_result_reg[0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\U0/fir_ip_v1_0_S00_AXI_inst/aw_en_reg )
+INFO: [Synth 8-3886] merging instance 'U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/SUM/sum_s_reg[12]' (FDE) to 'U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/SUM/sum_s_reg[23]'
+INFO: [Synth 8-3886] merging instance 'U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/SUM/sum_s_reg[13]' (FDE) to 'U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/SUM/sum_s_reg[23]'
+INFO: [Synth 8-3886] merging instance 'U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/SUM/sum_s_reg[14]' (FDE) to 'U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/SUM/sum_s_reg[23]'
+INFO: [Synth 8-3886] merging instance 'U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/SUM/sum_s_reg[15]' (FDE) to 'U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/SUM/sum_s_reg[23]'
+INFO: [Synth 8-3886] merging instance 'U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/SUM/sum_s_reg[16]' (FDE) to 'U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/SUM/sum_s_reg[23]'
+INFO: [Synth 8-3886] merging instance 'U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/SUM/sum_s_reg[17]' (FDE) to 'U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/SUM/sum_s_reg[23]'
+INFO: [Synth 8-3886] merging instance 'U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/SUM/sum_s_reg[18]' (FDE) to 'U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/SUM/sum_s_reg[23]'
+INFO: [Synth 8-3886] merging instance 'U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/SUM/sum_s_reg[19]' (FDE) to 'U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/SUM/sum_s_reg[23]'
+INFO: [Synth 8-3886] merging instance 'U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/SUM/sum_s_reg[20]' (FDE) to 'U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/SUM/sum_s_reg[23]'
+INFO: [Synth 8-3886] merging instance 'U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/SUM/sum_s_reg[21]' (FDE) to 'U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/SUM/sum_s_reg[23]'
+INFO: [Synth 8-3886] merging instance 'U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/SUM/sum_s_reg[22]' (FDE) to 'U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/SUM/sum_s_reg[23]'
+INFO: [Synth 8-3886] merging instance 'U0/fir_ip_v1_0_S00_AXI_inst/axi_rresp_reg[0]' (FDRE) to 'U0/fir_ip_v1_0_S00_AXI_inst/axi_rresp_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U0/fir_ip_v1_0_S00_AXI_inst/axi_rresp_reg[1] )
+INFO: [Synth 8-3886] merging instance 'U0/fir_ip_v1_0_S00_AXI_inst/axi_bresp_reg[0]' (FDRE) to 'U0/fir_ip_v1_0_S00_AXI_inst/axi_bresp_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U0/fir_ip_v1_0_S00_AXI_inst/axi_bresp_reg[1] )
+WARNING: [Synth 8-3332] Sequential element (sum_s_reg[11]) is unused and will be removed from module adder.
+INFO: [Synth 8-3332] Sequential element (U0/fir_ip_v1_0_S00_AXI_inst/axi_awaddr_reg[1]) is unused and will be removed from module system_fir_ip_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/fir_ip_v1_0_S00_AXI_inst/axi_awaddr_reg[0]) is unused and will be removed from module system_fir_ip_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/fir_ip_v1_0_S00_AXI_inst/aw_en_reg) is unused and will be removed from module system_fir_ip_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/fir_ip_v1_0_S00_AXI_inst/axi_bresp_reg[1]) is unused and will be removed from module system_fir_ip_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/fir_ip_v1_0_S00_AXI_inst/axi_araddr_reg[1]) is unused and will be removed from module system_fir_ip_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/fir_ip_v1_0_S00_AXI_inst/axi_araddr_reg[0]) is unused and will be removed from module system_fir_ip_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/fir_ip_v1_0_S00_AXI_inst/axi_rresp_reg[1]) is unused and will be removed from module system_fir_ip_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/nco_inst/ss/Sin_Cos_Table/addr1_r_reg[9]) is unused and will be removed from module system_fir_ip_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/nco_inst/ss/Sin_Cos_Table/addr1_r_reg[8]) is unused and will be removed from module system_fir_ip_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/nco_inst/ss/Sin_Cos_Table/addr1_r_reg[7]) is unused and will be removed from module system_fir_ip_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/nco_inst/ss/Sin_Cos_Table/addr1_r_reg[6]) is unused and will be removed from module system_fir_ip_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/nco_inst/ss/Sin_Cos_Table/addr1_r_reg[5]) is unused and will be removed from module system_fir_ip_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/nco_inst/ss/Sin_Cos_Table/addr1_r_reg[4]) is unused and will be removed from module system_fir_ip_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/nco_inst/ss/Sin_Cos_Table/addr1_r_reg[3]) is unused and will be removed from module system_fir_ip_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/nco_inst/ss/Sin_Cos_Table/addr1_r_reg[2]) is unused and will be removed from module system_fir_ip_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/nco_inst/ss/Sin_Cos_Table/addr1_r_reg[1]) is unused and will be removed from module system_fir_ip_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/nco_inst/ss/Sin_Cos_Table/addr1_r_reg[0]) is unused and will be removed from module system_fir_ip_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[1].MULTi/internal_result_reg[1]) is unused and will be removed from module system_fir_ip_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[1].MULTi/internal_result_reg[0]) is unused and will be removed from module system_fir_ip_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[11].MULTi/internal_result_reg[0]) is unused and will be removed from module system_fir_ip_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[14].MULTi/internal_result_reg[1]) is unused and will be removed from module system_fir_ip_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[14].MULTi/internal_result_reg[0]) is unused and will be removed from module system_fir_ip_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[15].MULTi/internal_result_reg[2]) is unused and will be removed from module system_fir_ip_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[15].MULTi/internal_result_reg[1]) is unused and will be removed from module system_fir_ip_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[15].MULTi/internal_result_reg[0]) is unused and will be removed from module system_fir_ip_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[27].MULTi/internal_result_reg[2]) is unused and will be removed from module system_fir_ip_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[27].MULTi/internal_result_reg[1]) is unused and will be removed from module system_fir_ip_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[27].MULTi/internal_result_reg[0]) is unused and will be removed from module system_fir_ip_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[39].MULTi/internal_result_reg[2]) is unused and will be removed from module system_fir_ip_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[39].MULTi/internal_result_reg[1]) is unused and will be removed from module system_fir_ip_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[39].MULTi/internal_result_reg[0]) is unused and will be removed from module system_fir_ip_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[51].MULTi/internal_result_reg[2]) is unused and will be removed from module system_fir_ip_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[51].MULTi/internal_result_reg[1]) is unused and will be removed from module system_fir_ip_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[51].MULTi/internal_result_reg[0]) is unused and will be removed from module system_fir_ip_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[52].MULTi/internal_result_reg[1]) is unused and will be removed from module system_fir_ip_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[52].MULTi/internal_result_reg[0]) is unused and will be removed from module system_fir_ip_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[55].MULTi/internal_result_reg[0]) is unused and will be removed from module system_fir_ip_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[65].MULTi/internal_result_reg[1]) is unused and will be removed from module system_fir_ip_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/gen_mult[65].MULTi/internal_result_reg[0]) is unused and will be removed from module system_fir_ip_0_0.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:45 ; elapsed = 00:01:04 . Memory (MB): peak = 771.750 ; gain = 491.953
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+ROM:
++------------------+---------------------------------------------------------------------------+---------------+----------------+
+|Module Name       | RTL Object                                                                | Depth x Width | Implemented As | 
++------------------+---------------------------------------------------------------------------+---------------+----------------+
+|Sin_Rom           | SIN_ROM[0]                                                                | 1024x11       | LUT            | 
+|Sin_Rom           | SIN_ROM[0]                                                                | 1024x11       | LUT            | 
+|system_fir_ip_0_0 | U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/nco_inst/ss/Sin_Cos_Table/SIN_ROM[0] | 1024x11       | LUT            | 
+|system_fir_ip_0_0 | U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/nco_inst/ss/Sin_Cos_Table/SIN_ROM[0] | 1024x11       | LUT            | 
++------------------+---------------------------------------------------------------------------+---------------+----------------+
+
+
+DSP: Preliminary Mapping  Report (see note below)
++------------------+----------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name       | DSP Mapping          | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------------+----------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|system_fir_ip_0_0 | (A2*(B:0x12))'       | 12     | 6      | -      | -      | 18     | 1    | 0    | -    | -    | -     | 1    | 0    | 
+|system_fir_ip_0_0 | (A2*(B:0x43))'       | 12     | 8      | -      | -      | 20     | 1    | 0    | -    | -    | -     | 1    | 0    | 
+|system_fir_ip_0_0 | (ACIN2*(B:0x3ffd2))' | 12     | 7      | -      | -      | 19     | 1    | 0    | -    | -    | -     | 1    | 0    | 
+|system_fir_ip_0_0 | (ACIN2*(B:0x5a))'    | 12     | 8      | -      | -      | 20     | 1    | 0    | -    | -    | -     | 1    | 0    | 
+|system_fir_ip_0_0 | (ACIN2*(B:0x3ffe9))' | 12     | 6      | -      | -      | 18     | 1    | 0    | -    | -    | -     | 1    | 0    | 
+|system_fir_ip_0_0 | (ACIN2*(B:0x32))'    | 12     | 7      | -      | -      | 19     | 1    | 0    | -    | -    | -     | 1    | 0    | 
+|system_fir_ip_0_0 | (ACIN2*(B:0x28))'    | 12     | 7      | -      | -      | 19     | 1    | 0    | -    | -    | -     | 1    | 0    | 
+|system_fir_ip_0_0 | (A2*(B:0x3a))'       | 12     | 7      | -      | -      | 19     | 1    | 0    | -    | -    | -     | 1    | 0    | 
+|system_fir_ip_0_0 | (A2*(B:0x22))'       | 12     | 7      | -      | -      | 19     | 1    | 0    | -    | -    | -     | 1    | 0    | 
+|system_fir_ip_0_0 | (ACIN2*(B:0x3ffda))' | 12     | 7      | -      | -      | 19     | 1    | 0    | -    | -    | -     | 1    | 0    | 
+|system_fir_ip_0_0 | (A2*(B:0x3ffb2))'    | 12     | 8      | -      | -      | 20     | 1    | 0    | -    | -    | -     | 1    | 0    | 
+|system_fir_ip_0_0 | (ACIN2*(B:0x3ffef))' | 12     | 6      | -      | -      | 18     | 1    | 0    | -    | -    | -     | 1    | 0    | 
+|system_fir_ip_0_0 | (ACIN2*(B:0x3ffce))' | 12     | 7      | -      | -      | 19     | 1    | 0    | -    | -    | -     | 1    | 0    | 
+|system_fir_ip_0_0 | (ACIN2*(B:0x3ffaa))' | 12     | 8      | -      | -      | 20     | 1    | 0    | -    | -    | -     | 1    | 0    | 
+|system_fir_ip_0_0 | (A2*(B:0x3ffbb))'    | 12     | 8      | -      | -      | 20     | 1    | 0    | -    | -    | -     | 1    | 0    | 
+|system_fir_ip_0_0 | (ACIN2*(B:0x3ffda))' | 12     | 7      | -      | -      | 19     | 1    | 0    | -    | -    | -     | 1    | 0    | 
+|system_fir_ip_0_0 | (ACIN2*(B:0x31))'    | 12     | 7      | -      | -      | 19     | 1    | 0    | -    | -    | -     | 1    | 0    | 
+|system_fir_ip_0_0 | (ACIN2*(B:0x3ffcc))' | 12     | 7      | -      | -      | 19     | 1    | 0    | -    | -    | -     | 1    | 0    | 
+|system_fir_ip_0_0 | (ACIN2*(B:0x48))'    | 12     | 8      | -      | -      | 20     | 1    | 0    | -    | -    | -     | 1    | 0    | 
+|system_fir_ip_0_0 | (ACIN2*(B:0x6b))'    | 12     | 8      | -      | -      | 20     | 1    | 0    | -    | -    | -     | 1    | 0    | 
+|system_fir_ip_0_0 | (A2*(B:0xea))'       | 12     | 9      | -      | -      | 21     | 1    | 0    | -    | -    | -     | 1    | 0    | 
+|system_fir_ip_0_0 | (ACIN2*(B:0x72))'    | 12     | 8      | -      | -      | 20     | 1    | 0    | -    | -    | -     | 1    | 0    | 
+|system_fir_ip_0_0 | (ACIN2*(B:0x26))'    | 12     | 7      | -      | -      | 19     | 1    | 0    | -    | -    | -     | 1    | 0    | 
+|system_fir_ip_0_0 | (ACIN2*(B:0x1fb))'   | 12     | 10     | -      | -      | 22     | 1    | 0    | -    | -    | -     | 1    | 0    | 
+|system_fir_ip_0_0 | (ACIN2*(B:0x3fedd))' | 12     | 10     | -      | -      | 22     | 1    | 0    | -    | -    | -     | 1    | 0    | 
+|system_fir_ip_0_0 | (ACIN2*(B:0x2e5))'   | 12     | 11     | -      | -      | 23     | 1    | 0    | -    | -    | -     | 1    | 0    | 
+|system_fir_ip_0_0 | (ACIN2*(B:0x3fedd))' | 12     | 10     | -      | -      | 22     | 1    | 0    | -    | -    | -     | 1    | 0    | 
+|system_fir_ip_0_0 | (ACIN2*(B:0x1fb))'   | 12     | 10     | -      | -      | 22     | 1    | 0    | -    | -    | -     | 1    | 0    | 
+|system_fir_ip_0_0 | (ACIN2*(B:0x26))'    | 12     | 7      | -      | -      | 19     | 1    | 0    | -    | -    | -     | 1    | 0    | 
+|system_fir_ip_0_0 | (ACIN2*(B:0x72))'    | 12     | 8      | -      | -      | 20     | 1    | 0    | -    | -    | -     | 1    | 0    | 
+|system_fir_ip_0_0 | (ACIN2*(B:0xea))'    | 12     | 9      | -      | -      | 21     | 1    | 0    | -    | -    | -     | 1    | 0    | 
+|system_fir_ip_0_0 | (A2*(B:0x6b))'       | 12     | 8      | -      | -      | 20     | 1    | 0    | -    | -    | -     | 1    | 0    | 
+|system_fir_ip_0_0 | (ACIN2*(B:0x48))'    | 12     | 8      | -      | -      | 20     | 1    | 0    | -    | -    | -     | 1    | 0    | 
+|system_fir_ip_0_0 | (ACIN2*(B:0x3ffcc))' | 12     | 7      | -      | -      | 19     | 1    | 0    | -    | -    | -     | 1    | 0    | 
+|system_fir_ip_0_0 | (ACIN2*(B:0x31))'    | 12     | 7      | -      | -      | 19     | 1    | 0    | -    | -    | -     | 1    | 0    | 
+|system_fir_ip_0_0 | (ACIN2*(B:0x3ffda))' | 12     | 7      | -      | -      | 19     | 1    | 0    | -    | -    | -     | 1    | 0    | 
+|system_fir_ip_0_0 | (ACIN2*(B:0x3ffbb))' | 12     | 8      | -      | -      | 20     | 1    | 0    | -    | -    | -     | 1    | 0    | 
+|system_fir_ip_0_0 | (A2*(B:0x3ffaa))'    | 12     | 8      | -      | -      | 20     | 1    | 0    | -    | -    | -     | 1    | 0    | 
+|system_fir_ip_0_0 | (ACIN2*(B:0x3ffce))' | 12     | 7      | -      | -      | 19     | 1    | 0    | -    | -    | -     | 1    | 0    | 
+|system_fir_ip_0_0 | (ACIN2*(B:0x3ffef))' | 12     | 6      | -      | -      | 18     | 1    | 0    | -    | -    | -     | 1    | 0    | 
+|system_fir_ip_0_0 | (ACIN2*(B:0x3ffb2))' | 12     | 8      | -      | -      | 20     | 1    | 0    | -    | -    | -     | 1    | 0    | 
+|system_fir_ip_0_0 | (A2*(B:0x3ffda))'    | 12     | 7      | -      | -      | 19     | 1    | 0    | -    | -    | -     | 1    | 0    | 
+|system_fir_ip_0_0 | (ACIN2*(B:0x22))'    | 12     | 7      | -      | -      | 19     | 1    | 0    | -    | -    | -     | 1    | 0    | 
+|system_fir_ip_0_0 | (A2*(B:0x3a))'       | 12     | 7      | -      | -      | 19     | 1    | 0    | -    | -    | -     | 1    | 0    | 
+|system_fir_ip_0_0 | (A2*(B:0x28))'       | 12     | 7      | -      | -      | 19     | 1    | 0    | -    | -    | -     | 1    | 0    | 
+|system_fir_ip_0_0 | (ACIN2*(B:0x32))'    | 12     | 7      | -      | -      | 19     | 1    | 0    | -    | -    | -     | 1    | 0    | 
+|system_fir_ip_0_0 | (ACIN2*(B:0x3ffe9))' | 12     | 6      | -      | -      | 18     | 1    | 0    | -    | -    | -     | 1    | 0    | 
+|system_fir_ip_0_0 | (ACIN2*(B:0x5a))'    | 12     | 8      | -      | -      | 20     | 1    | 0    | -    | -    | -     | 1    | 0    | 
+|system_fir_ip_0_0 | (ACIN2*(B:0x3ffd2))' | 12     | 7      | -      | -      | 19     | 1    | 0    | -    | -    | -     | 1    | 0    | 
+|system_fir_ip_0_0 | (ACIN2*(B:0x43))'    | 12     | 8      | -      | -      | 20     | 1    | 0    | -    | -    | -     | 1    | 0    | 
+|system_fir_ip_0_0 | (A2*(B:0x12))'       | 12     | 6      | -      | -      | 18     | 1    | 0    | -    | -    | -     | 1    | 0    | 
++------------------+----------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:03 ; elapsed = 00:01:32 . Memory (MB): peak = 821.434 ; gain = 541.637
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:03 ; elapsed = 00:01:33 . Memory (MB): peak = 825.262 ; gain = 545.465
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:05 ; elapsed = 00:01:34 . Memory (MB): peak = 855.555 ; gain = 575.758
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6064] Net \U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/ena_signal  is driving 102 big block pins (URAM, BRAM and DSP loads). Created 11 replicas of its driver. 
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:06 ; elapsed = 00:01:36 . Memory (MB): peak = 855.555 ; gain = 575.758
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:06 ; elapsed = 00:01:36 . Memory (MB): peak = 855.555 ; gain = 575.758
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:07 ; elapsed = 00:01:37 . Memory (MB): peak = 855.555 ; gain = 575.758
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:07 ; elapsed = 00:01:37 . Memory (MB): peak = 855.555 ; gain = 575.758
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:07 ; elapsed = 00:01:37 . Memory (MB): peak = 855.555 ; gain = 575.758
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:07 ; elapsed = 00:01:37 . Memory (MB): peak = 855.555 ; gain = 575.758
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++------------------+----------------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name       | RTL Name                                                                   | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++------------------+----------------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|system_fir_ip_0_0 | U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/SHIFT_REG/regs_reg[8][11]  | 7      | 48    | NO           | NO                 | YES               | 48     | 0       | 
+|system_fir_ip_0_0 | U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/SHIFT_REG/regs_reg[14][11] | 3      | 24    | NO           | NO                 | YES               | 24     | 0       | 
+|system_fir_ip_0_0 | U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/SHIFT_REG/regs_reg[20][11] | 5      | 24    | NO           | NO                 | YES               | 24     | 0       | 
+|system_fir_ip_0_0 | U0/fir_ip_v1_0_S00_AXI_inst/FIR_INST/filter_DUT/SHIFT_REG/regs_reg[39][11] | 12     | 12    | NO           | NO                 | YES               | 12     | 0       | 
++------------------+----------------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+----------+------+
+|      |Cell      |Count |
++------+----------+------+
+|1     |CARRY4    |   279|
+|2     |DSP48E1   |    13|
+|3     |DSP48E1_1 |    38|
+|4     |LUT1      |   100|
+|5     |LUT2      |   158|
+|6     |LUT3      |   702|
+|7     |LUT4      |   845|
+|8     |LUT5      |    15|
+|9     |LUT6      |   174|
+|10    |MUXF7     |    53|
+|11    |MUXF8     |    13|
+|12    |SRL16E    |   108|
+|13    |FDRE      |   686|
+|14    |FDSE      |     2|
++------+----------+------+
+
+Report Instance Areas: 
++------+-------------------------------+--------------------+------+
+|      |Instance                       |Module              |Cells |
++------+-------------------------------+--------------------+------+
+|1     |top                            |                    |  3186|
+|2     |  U0                           |fir_ip_v1_0         |  3186|
+|3     |    fir_ip_v1_0_S00_AXI_inst   |fir_ip_v1_0_S00_AXI |  3186|
+|4     |      FIR_INST                 |filter_pkg          |  2957|
+|5     |        filter_DUT             |FIR_Notch           |  2645|
+|6     |          SHIFT_REG            |shift_register      |   430|
+|7     |          SUM                  |adder               |  1668|
+|8     |          \gen_mult[0].MULTi   |multiplier          |     2|
+|9     |          \gen_mult[10].MULTi  |multiplier_0        |    35|
+|10    |          \gen_mult[11].MULTi  |multiplier_1        |    28|
+|11    |          \gen_mult[12].MULTi  |multiplier_2        |     1|
+|12    |          \gen_mult[13].MULTi  |multiplier_3        |     1|
+|13    |          \gen_mult[14].MULTi  |multiplier_4        |    33|
+|14    |          \gen_mult[15].MULTi  |multiplier_5        |    28|
+|15    |          \gen_mult[16].MULTi  |multiplier_6        |     1|
+|16    |          \gen_mult[17].MULTi  |multiplier_7        |     1|
+|17    |          \gen_mult[18].MULTi  |multiplier_8        |     1|
+|18    |          \gen_mult[19].MULTi  |multiplier_9        |     1|
+|19    |          \gen_mult[1].MULTi   |multiplier_10       |    32|
+|20    |          \gen_mult[20].MULTi  |multiplier_11       |    12|
+|21    |          \gen_mult[21].MULTi  |multiplier_12       |     1|
+|22    |          \gen_mult[22].MULTi  |multiplier_13       |     1|
+|23    |          \gen_mult[23].MULTi  |multiplier_14       |     2|
+|24    |          \gen_mult[24].MULTi  |multiplier_15       |     1|
+|25    |          \gen_mult[25].MULTi  |multiplier_16       |     1|
+|26    |          \gen_mult[26].MULTi  |multiplier_17       |     3|
+|27    |          \gen_mult[27].MULTi  |multiplier_18       |    28|
+|28    |          \gen_mult[28].MULTi  |multiplier_19       |     4|
+|29    |          \gen_mult[29].MULTi  |multiplier_20       |     1|
+|30    |          \gen_mult[2].MULTi   |multiplier_21       |     1|
+|31    |          \gen_mult[30].MULTi  |multiplier_22       |     1|
+|32    |          \gen_mult[31].MULTi  |multiplier_23       |     1|
+|33    |          \gen_mult[32].MULTi  |multiplier_24       |     1|
+|34    |          \gen_mult[33].MULTi  |multiplier_25       |     2|
+|35    |          \gen_mult[34].MULTi  |multiplier_26       |     1|
+|36    |          \gen_mult[35].MULTi  |multiplier_27       |     1|
+|37    |          \gen_mult[36].MULTi  |multiplier_28       |     1|
+|38    |          \gen_mult[37].MULTi  |multiplier_29       |     1|
+|39    |          \gen_mult[38].MULTi  |multiplier_30       |     3|
+|40    |          \gen_mult[39].MULTi  |multiplier_31       |    28|
+|41    |          \gen_mult[3].MULTi   |multiplier_32       |     1|
+|42    |          \gen_mult[40].MULTi  |multiplier_33       |     4|
+|43    |          \gen_mult[41].MULTi  |multiplier_34       |     2|
+|44    |          \gen_mult[42].MULTi  |multiplier_35       |     1|
+|45    |          \gen_mult[43].MULTi  |multiplier_36       |     1|
+|46    |          \gen_mult[44].MULTi  |multiplier_37       |     1|
+|47    |          \gen_mult[45].MULTi  |multiplier_38       |     1|
+|48    |          \gen_mult[46].MULTi  |multiplier_39       |    12|
+|49    |          \gen_mult[47].MULTi  |multiplier_40       |     1|
+|50    |          \gen_mult[48].MULTi  |multiplier_41       |     1|
+|51    |          \gen_mult[49].MULTi  |multiplier_42       |     1|
+|52    |          \gen_mult[4].MULTi   |multiplier_43       |     1|
+|53    |          \gen_mult[50].MULTi  |multiplier_44       |     2|
+|54    |          \gen_mult[51].MULTi  |multiplier_45       |    28|
+|55    |          \gen_mult[52].MULTi  |multiplier_46       |    32|
+|56    |          \gen_mult[53].MULTi  |multiplier_47       |     1|
+|57    |          \gen_mult[54].MULTi  |multiplier_48       |     1|
+|58    |          \gen_mult[55].MULTi  |multiplier_49       |    28|
+|59    |          \gen_mult[56].MULTi  |multiplier_50       |    35|
+|60    |          \gen_mult[57].MULTi  |multiplier_51       |     1|
+|61    |          \gen_mult[58].MULTi  |multiplier_52       |    43|
+|62    |          \gen_mult[59].MULTi  |multiplier_53       |     2|
+|63    |          \gen_mult[5].MULTi   |multiplier_54       |     2|
+|64    |          \gen_mult[60].MULTi  |multiplier_55       |     1|
+|65    |          \gen_mult[61].MULTi  |multiplier_56       |     1|
+|66    |          \gen_mult[62].MULTi  |multiplier_57       |     1|
+|67    |          \gen_mult[63].MULTi  |multiplier_58       |     1|
+|68    |          \gen_mult[64].MULTi  |multiplier_59       |     1|
+|69    |          \gen_mult[65].MULTi  |multiplier_60       |    32|
+|70    |          \gen_mult[66].MULTi  |multiplier_61       |     3|
+|71    |          \gen_mult[6].MULTi   |multiplier_62       |     1|
+|72    |          \gen_mult[7].MULTi   |multiplier_63       |     1|
+|73    |          \gen_mult[8].MULTi   |multiplier_64       |    43|
+|74    |          \gen_mult[9].MULTi   |multiplier_65       |     1|
+|75    |        gen_ena                |gen_enable          |    29|
+|76    |        nco_inst               |nco                 |   283|
+|77    |          af                   |Acum_Fase           |    50|
+|78    |          ss                   |Sin_Cos             |   233|
+|79    |            Sin_Cos_Table      |Sin_Rom             |   221|
++------+-------------------------------+--------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:07 ; elapsed = 00:01:37 . Memory (MB): peak = 855.555 ; gain = 575.758
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 548 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:37 ; elapsed = 00:01:22 . Memory (MB): peak = 855.555 ; gain = 266.422
+Synthesis Optimization Complete : Time (s): cpu = 00:01:07 ; elapsed = 00:01:37 . Memory (MB): peak = 855.555 ; gain = 575.758
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 396 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+130 Infos, 111 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:10 ; elapsed = 00:01:42 . Memory (MB): peak = 855.555 ; gain = 587.254
+INFO: [Common 17-1381] The checkpoint 'E:/Especializacion_fiuba/MyS/TP_FINAL/sintesis/TP_FINAL/TP_FINAL.runs/system_fir_ip_0_0_synth_1/system_fir_ip_0_0.dcp' has been generated.
+INFO: [Coretcl 2-1482] Added synthesis output to IP cache for IP e:/Especializacion_fiuba/MyS/TP_FINAL/sintesis/TP_FINAL/TP_FINAL.srcs/sources_1/bd/system/ip/system_fir_ip_0_0/system_fir_ip_0_0.xci
+INFO: [Coretcl 2-1174] Renamed 78 cell refs.
+INFO: [Common 17-1381] The checkpoint 'E:/Especializacion_fiuba/MyS/TP_FINAL/sintesis/TP_FINAL/TP_FINAL.runs/system_fir_ip_0_0_synth_1/system_fir_ip_0_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file system_fir_ip_0_0_utilization_synth.rpt -pb system_fir_ip_0_0_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.061 . Memory (MB): peak = 855.555 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Mon Jun 16 20:18:17 2025...
