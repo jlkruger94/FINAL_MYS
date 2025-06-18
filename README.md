@@ -67,7 +67,7 @@ Ya en el entorno SDK se desarrolló el código necesario para comandar, a traves
 
         sleep(1);
 ```
-Una vez sintetizado el hardware un compilado el código, se realizaron las pruebas sobre el servidor remoto provisto por la catedra.
+Una vez sintetizado el hardware y compilado el código, se realizaron las pruebas sobre el servidor remoto provisto por la catedra.
 
 A continuación se presentan las distintas configuraciones realizadas realizadas:
 
@@ -108,5 +108,13 @@ sintesis/TP_FINAL/TP_FINAL.sdk/trabajo_final_v1/src/fir_controller.c
 ``
 - Presentación:
 ``
-Implementación de filtro FIR
+Implementación de filtro FIR.pdf
+``
+- Informe:
+``
+Implementación de un filtro FIR - MYS.pdf
+``
+- Evidencia gráfica:
+``
+capturas
 ``
